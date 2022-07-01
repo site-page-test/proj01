@@ -1,0 +1,9 @@
+var str = 'loading';
+	
+.preloader
+	-for(var i = 0; i < str.length; i++)
+		.preloader__wheel-wrapper
+			.preloader__wheel
+				span.preloader__content #{str[i]}
+				.preloader__inner-wheel
+				.preloader__second-inner-whell

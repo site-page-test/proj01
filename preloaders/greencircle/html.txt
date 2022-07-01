@@ -1,0 +1,14 @@
+<body>
+  <header>
+   <p class="desinks">www.alexandre-petit.com</p>
+    <p class="petit">Alexandre PETIT</p>
+    </header>
+  <div id="loader">
+      <div id="header"></div>
+      <div id="header2"></div>
+      <div id="header3"></div>
+  </div>
+  <div id="home">
+    <div id="cercle1"></div>
+  </div>
+</body>

@@ -1,0 +1,90 @@
+Pug code
+h1 Pure css loader #2
+h2 Inspired by Ryan Duffy (via 
+  a(href="https://dribbble.com/shots/2505716-Loading-076", target="blank") dribble
+  |)
+
+ul.loader
+  li.center
+  -for (var x = 1; x < 9; x++)
+    li(class="item item-" + x)
+Sass code
+$background-color: hsl(0, 0, 15)
+
+body
+  background: $background-color
+  font-family: sans-serif
+h1, h2
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  color: hsl(0, 0, 100)
+  text-transform: uppercase
+  letter-spacing: 2px
+h1
+  top: 24px
+  font-size: 12px
+h2
+  top: 44px
+  font-size: 10px
+  opacity: 0.7
+  a
+    color: hsl(0, 0, 100)
+    text-decoration: none
+    border-bottom: 1px dotted lighten($background-color, 50%)
+  
+    
+    
+// Loader vars
+$loader-size: 40px
+$loader-color: hsl(230, 70, 55)
+$loader-time: 3.2s
+$loader-delay: 0s
+
+// Items vars
+$item-size: 10px
+$item-rotation: 0deg
+    
+.loader
+  position: absolute
+  width: $loader-size
+  height: $loader-size
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  .center
+    width: $loader-size
+    height: $loader-size
+    background: $loader-color
+    border-radius: 50%
+    animation: center $loader-time ease-in-out infinite
+  .item
+    position: absolute
+    width: $item-size
+    height: $item-size
+    top: ($loader-size - $item-size) /2
+    left: 0
+    right: 0
+    margin: auto
+    background: $loader-color
+    border-radius: 50%
+    
+@for $i from 1 through 8
+  $loader-delay: $loader-delay + 0.2
+  $item-rotation: $item-rotation + 45
+  .item-#{$i}
+    animation: anim-#{$i} $loader-time ease-in-out infinite $loader-delay
+    animation-fill-mode: backwards
+  @keyframes anim-#{$i}
+    0%, 60%, 100%
+      transform: rotate($item-rotation) translateX($loader-size) scale(1)
+    10%, 50%
+      transform: rotate($item-rotation) translateX(0) scale(1.5)
+
+@keyframes center
+  0%, 10%, 90%, 100%
+    transform: scale(0.7)
+  45%, 55%
+    transform: scale(1)
+
+    

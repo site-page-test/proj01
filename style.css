@@ -1,0 +1,296 @@
+/*importing google font*/
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/*Preloader div*/
+#preloader{
+  background: #000000 url(preloaders/loader.gif) no-repeat center ;
+  background-size: 100%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  margin:0;
+  padding:0;
+  border:10 solid black;
+}
+body{
+  background-color: rgb(223, 251, 251);
+}
+/*Responsive design for smartphone*/
+@media (min-width:320px) and (max-width:700px){
+  /*Custom Scroll-bar*/
+body::-webkit-scrollbar{
+  width: 9px;
+  height: 60px;
+}
+body::-webkit-scrollbar-track{
+  box-shadow: #000000;
+  scrollbar-track-color: #000000;
+  scroll-margin: 20px;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: rgb(63, 140, 140);
+  outline: 1px solid rgb(107, 105, 105);
+}
+
+/*Editing each element of body seperately*/
+#h1{
+ margin-top: 0px;
+ margin-left:0px;
+ margin-right:0%;
+ margin-bottom:0px;
+ border-radius: 15px;
+ padding: 20px 20px;
+ border-style:groove;
+ border-color: aqua;
+  font-family: 'Lavishly Yours', cursive;
+  text-align: center;
+  color: rgb(255, 252, 252);
+  background-color:rgb(40, 39, 39);
+  font-size: 200%;
+  
+}
+
+/*trying to get navigation bar*/
+ul{
+  
+  list-style-type: none;
+  margin-right:0px;
+  margin-left: 0px;
+  margin-top:0px;
+  overflow:hidden;
+  background-color: rgb(84, 82, 82);
+  border-radius: 15px;
+  border-style:groove;
+  border-color: rgb(3, 3, 3);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+
+  
+}
+
+li{
+  float: left;
+}
+
+li a {
+ 
+  color: white;
+  text-align:left;
+  padding: 6px 6px;
+  text-decoration: none;
+  font-size: 120%;
+  left:0px;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: rgb(0, 234, 255);
+}
+.active {
+  background-color: #000000;
+}
+
+/*User image*/
+img{
+  margin-top: 13%;
+  
+  margin-bottom: 10px;
+ margin-left:25%;
+  width: 200px;
+  height:200px;
+
+}
+/*content*/
+#authorname{
+  
+  position:absolute ;
+  left:37%;
+  top:43%;
+  font-size:140%;
+}
+h2{
+  text-decoration:underline;
+  margin-top:86%;
+  position: absolute;
+  margin-left:30%;
+overflow: auto;
+padding: 20px 20px;
+font-family:'Pacifico', cursive;
+font-size: 210%;
+font-weight: 50%;
+}
+
+#p1{
+  margin-top: 47%;
+  margin-left:5%;
+  margin-right: 5%;
+  text-align: justify;
+  text-indent: 20px;
+  letter-spacing:0px;
+  word-spacing: 0px;
+  font-style: oblique;
+  font-size: 150%;
+}
+#p2{
+  margin-left:10px ;
+  margin-top:15px;
+  margin-right:10px;
+  
+  text-align: justify;
+
+  
+  
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  font-style: oblique;
+  font-size:150%;
+}
+
+
+}
+
+
+
+
+/*Media Screen for desktop*/
+@media (min-width:800px)  {
+  
+  body{
+    color:rgb(223, 251, 251);
+  }
+
+/*Custom Scroll-bar*/
+body::-webkit-scrollbar{
+  width: 9px;
+  height: 60px;
+}
+body::-webkit-scrollbar-track{
+  box-shadow: #000000;
+  scrollbar-track-color: #000000;
+  scroll-margin: 20px;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: rgb(63, 140, 140);
+  outline: 1px solid rgb(107, 105, 105);
+}
+
+/*Editing each element of body seperately*/
+#h1{
+margin-top: 0%;
+margin-bottom:0%;
+ border-style: groove;
+ border-radius:15px;
+ padding: 25px 18px;
+ border-color: aqua;
+  font-family: 'Lavishly Yours', cursive;
+  text-align: center;
+  color: white;
+  background-color:rgb(54, 52, 52);
+  font-size:50px;
+}
+
+/*trying to get navigation bar*/
+ul{
+  list-style-type: none;
+  margin-right:0px;
+  margin-left: 0px;
+  margin-top:0px;
+  overflow:hidden;
+  background-color: rgb(99, 94, 94);
+  border-radius: 10px;
+  border-style:groove;
+  border-color: rgb(3, 3, 3);
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  
+}
+
+li{
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+.active {
+  background-color: #020202;
+}
+
+/*User image*/
+img{
+  margin-bottom: 10px;
+  float:right;
+  margin:30px;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: 40px;
+}
+/*content*/
+#h2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+overflow:hidden;
+position:absolute;
+left: 100px;
+font-family:'Pacifico', cursive;
+font-size: 40px;
+font-weight: 100;
+text-decoration: underline;
+color: #000000;
+}
+#authorname{
+  margin-bottom:px;
+  position:absolute ;
+  left:84%;
+  top:87%;
+}
+#p1{
+  margin-top: 170px;
+  margin-left:130px;
+  text-align: justify;
+  text-indent: 20px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  line-height :25px;
+  font-style: oblique;
+  font-size: 19px;
+  color: #000000;
+}
+#p2{
+  color: #000000;
+  margin-left:130px ;
+  margin-top:60px;
+  margin-right: 90px;
+  clear:right;
+  text-align: justify;
+
+  
+  
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  line-height: 25px;
+  font-style: oblique;
+  font-size: 19px;
+  overflow: hidden;
+}
+}
+
+
+
+
